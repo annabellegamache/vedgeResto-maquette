@@ -1,0 +1,254 @@
+@media screen and (min-width: 1700px) {
+  .accueil {
+    background: url(../img/headerAccueil_grand.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 60vh;
+    max-width: 1700px;
+  }
+
+  .accueil header div:first-child{
+    flex-grow:1;
+    
+  }
+
+ 
+
+}
+
+
+@media screen and (min-width: 1150px) {
+  .categorie {
+    max-width:445px;
+  }
+
+}
+
+@media screen and (max-width: 1150px) {
+  /*======================================================================   NAV */
+  a[href="index.html"] span {
+    display: none;
+  }
+  nav a {
+    min-width: 100px;
+  }
+  /*======================================================================   ACCUEIL */
+  .accueil {
+    background: url(../img/headerAccueil_moyen.jpg) no-repeat top right;
+    max-width: 1150px;
+  }
+  .accueil {
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+
+}
+
+@media screen and (max-width: 945px) {
+  /*======================================================================   ACCUEIL */
+  .accueil {
+    background-position: top center;
+    max-width: 945px;
+  }
+  /*reduction de la largeur dela promotion*/
+  .promotion {
+    background-position: center center;
+    background-size: contain;
+    background-color: #000;
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  /*======================================================================   NAV mobile (toogle) */
+  nav {
+    text-align: left;
+    max-height: none;
+  }
+  .navZone1Link {
+    display: none;
+  }
+  .navZone1Link {
+    float: none;
+    text-align: center;
+    max-height: none;
+    z-index: 10;
+  }
+  nav .logo {
+    display: inline-block;
+  }
+  .navZone1Link a.bntLink {
+    width: 80%;
+    margin: 0 auto;
+  }
+  nav a {
+    padding: 5px;
+  }
+  /*sousmenu*/
+  nav div.sousMenu>div {
+    position: static;
+  }
+  /*==================================menu hover enlever il va falloir developper le onclick qunad c'est mobile*/
+  nav div.sousMenu:hover>div {
+    display: none;
+  }
+  /**menu burger*/
+  nav label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    display: block;
+  }
+  nav label img {
+    width: 100%;
+  }
+  nav label img:nth-child(2) {
+    position: relative;
+    top: -20px;
+  }
+  #toggle:checked~div.navZone1Link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  #toggle:checked~label img:first-child {
+    display: none;
+  }
+  #toggle:checked~label img:nth-child(2) {
+    display: block;
+  }
+  #toggle:not(checked)~label img:nth-child(2) {
+    display: none;
+  }
+  .recherche {
+    display: none;
+  }
+
+  .categorie {
+  
+    max-width: 250px;
+    /* border-radius: 15px; */
+}
+
+
+
+  /*====================================================================== HEADER ACCUEIL */
+  .accueil {
+    background-position: center 80px;
+    background-size: contain;
+    max-width: 850px;
+    transition: all 0.3 ease-in;
+  }
+  .accueil header .flexZone {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+  }
+  .accueil header div {
+    text-align: center;
+  }
+
+  .accueil header h1 {
+    max-width: 100%;
+}
+  /*====================================================== HEADER ACCUEIL ZONE PROMOTION */
+  .promotion {
+    background-position: bottom center;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .promotion a.bntLink{
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /*====================================================================== HEADER ACCUEIL */
+  header{
+    background-color: rgba(0,0,0,0.5);
+  }
+  .accueil {
+    background: url(../img/headerAccueil_petit.jpg) no-repeat center 80px;
+    max-width: 600px;
+  }
+  .accueil header h1 {
+    font-size: 2.5em;
+  }
+  /*====================================================================== ZONE INFOLETTRE */
+  .infolettre input[type=text] {
+    min-width: 90%;
+    margin-bottom: 20px;
+  }
+  /*====================================================================== FOOTER */
+  footer {
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+  footer .flexZone>div:first-child {
+    width: 80%;
+  }
+  footer .flexZone>div a img.logo {
+    float: none;
+    margin: 0 auto;
+  }
+  footer .flexZone {
+    gap: 20px;
+  }
+  footer div.sociaux {
+    margin-top: 5px;
+  }
+  footer div.sociaux img {
+    margin-top: 5px;
+  }
+  footer .flexZone>div:not(:first-child) {
+    width: 30%;
+    text-align: left;
+  }
+  footer div.sociaux a {
+    margin: 2px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 577px) {
+
+  .categorie {
+    max-width: 310px;
+
+  }
+
+  footer .flexZone {
+    flex-direction: column;
+  }
+
+  footer  {
+    font-size: 1em;
+  }
+
+  footer .copyright{
+    font-size: 0.8em;
+  }
+
+  footer .wrapper .flexZone>div{
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 475px) {
+  .accueil header h1 {
+    font-size: 2em;
+  }
+}
+
